@@ -1,0 +1,84 @@
+/* styles.css */
+header a img {
+    width: 100px; /* Ajusta el ancho según tus preferencias */
+    height: auto; /* Esto mantiene la proporción original */
+    margin-right: 20px; /* Espaciado entre el logo y otros elementos en el header */
+    filter: invert(1);
+}
+h1 {
+  text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('1fondo.gif'); /* Reemplaza con la ruta correcta de tu archivo GIF */
+    background-size: cover; /* Ajusta el tamaño de la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    color: white; /* Ajusta el color del texto para que sea legible en la imagen */
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - (2em + 1em)); /* Calcula la altura del cuerpo restando el espacio ocupado por el encabezado y el pie de página */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+#welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 125px; /* Ajusta el tamaño del texto según tus preferencias */
+}
+
+header h1 {
+    margin: 0; /* Elimina el margen predeterminado del encabezado */
+}
+
+nav {
+    background-color: #444;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
