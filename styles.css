@@ -6,6 +6,10 @@ header a img {
     margin-right: 20px; /* Espaciado entre el logo y otros elementos en el header */
     filter: invert(1);
 }
+h1 {
+  text-align: center;
+}
+
 
 
 body {
@@ -24,9 +28,7 @@ header {
     align-items: center;
 }
 
-#logo {
-    margin-right: 20px; /* Espaciado entre el logo y el título */
-}
+
 
 header h1 {
     margin: 0; /* Elimina el margen predeterminado del encabezado */
