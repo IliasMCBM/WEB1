@@ -1,5 +1,4 @@
-/* main.css */
-
+/* styles.css */
 header a img {
     width: 100px; /* Ajusta el ancho según tus preferencias */
     height: auto; /* Esto mantiene la proporción original */
@@ -9,14 +8,16 @@ header a img {
 h1 {
   text-align: center;
 }
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-image: url('1fondo.gif'); /* Reemplaza con la ruta correcta de tu archivo GIF */
+    background-size: cover; /* Ajusta el tamaño de la imagen al tamaño del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    color: white; /* Ajusta el color del texto para que sea legible en la imagen */
 }
-
 header {
     background-color: #333;
     color: white;
@@ -24,6 +25,25 @@ header {
     padding: 1em;
     display: flex;
     align-items: center;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - (2em + 1em)); /* Calcula la altura del cuerpo restando el espacio ocupado por el encabezado y el pie de página */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+#welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 125px; /* Ajusta el tamaño del texto según tus preferencias */
 }
 
 header h1 {
@@ -49,11 +69,6 @@ nav a:hover {
     color: black;
 }
 
-nav a.active {
-    background-color: #686868;
-    color: white;
-}
-
 section {
     padding: 20px;
 }
@@ -67,33 +82,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-.evento {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 15px;
-}
-
-.evento img {
-    width: 100%;
-    height: auto;
-}
-
-.exhibition {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.exhibition img {
-    width: 300px;
-    height: 200px;
-    margin-right: 15px;
-}
-
-.exhibition-info {
-    flex-grow: 1;
-}
-
 .footer-links {
     margin-top: 10px;
 }
