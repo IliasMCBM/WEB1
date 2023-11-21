@@ -1,4 +1,4 @@
-# Propecto Ing. Web
+# Proyecto Ing. Web
 
 ## Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 ### 1. git clone https://github.com/IliasMCBM/WEB
@@ -9,7 +9,7 @@
 
 ## Autores
 
-### Emiliano ** - *Trabajo Inicial* - [tu-usuario](https://github.com/tu-usuario)
+### Emiliano - [EmiBrigante](https://github.com/EmiBrigante)
 ### Ilias
 ### Bea
 
