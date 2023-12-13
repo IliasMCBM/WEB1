@@ -2,27 +2,27 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museo XYZ</title>
 </head>
 <body>
 
     <header>
-        <a href="Museo.html"  id="logo">><img src="logo.png" alt="Logo del Museo"></a>
+        <a href="index.html"  id="logo"><img src="images/logo.png" alt="Logo del Museo"></a>
 
         <h1>Museo XYZ</h1>
 
     </header>
 
     <nav>
-        <a href="home.html" target="_self">Inicio</a>
-        <a href="exhibiciones.html" target="_self">Exhibiciones</a>
-        <a href="eventos.html" target="_self">Eventos</a>
-        <a href="acerca.html" target="_self">Acerca de nosotros</a>
-        <a href="contacto.html" target="_self">Contacto</a>
+        <a href="home.html" class="active">Inicio</a>
+        <a href="exhibiciones.html">Exhibiciones</a>
+        <a href="eventos.html" >Eventos</a>
+        <a href="acerca.html">Acerca de nosotros</a>
+        <a href="contacto.html">Contacto</a>
     </nav>
-
+    
     <section>
         <h2>Bienvenido al Museo XYZ</h2>
         <p>Descubre nuestras fascinantes exhibiciones y participa en emocionantes eventos.</p>
@@ -30,30 +30,62 @@
 
     <section id="exhibitions">
         <h2>Exhibiciones</h2>
-        <p>Explora nuestras increíbles colecciones de arte y objetos históricos.</p>
-        <!-- Agrega aquí información sobre las exhibiciones -->
+        <div class="image-grid">
+            <a href="exhibiciones.html"  id="ex1">
+                <img src="images/ex1.png" alt="Imagen de la Exhibición 1">
+            </a>
+            <a href="exhibiciones.html"  id="ex1">
+                <img src="images/ex2.png" alt="Imagen de la Exhibición 2">
+            </a>
+            <a href="exhibiciones.html"  id="ex1">
+                <img src="images/ex3.png" alt="Imagen de la Exhibición 3">
+            </a>
+        </div>
+        
     </section>
 
     <section id="events">
         <h2>Eventos</h2>
-        <p>Consulta nuestro calendario de eventos para no perderte ninguna actividad especial.</p>
-        <!-- Agrega aquí información sobre los eventos -->
-    </section>
+        <div id="event-image">
+            <a href="eventos.html">
+                <img src="images/ev.png" alt="Eventos">
+            </a>    
+            <div id="welcome-event">
+                <a href="eventos.html" class="mi-enlace">
+                    <h2>¡Bienvenido a los Eventos!</h2>
+                </a>
+            </div>
+        </div>
+        <!-- ... (otros elementos del cuerpo) ... -->
+    </section>      
 
     <section id="about">
         <h2>Acerca de nosotros</h2>
-        <p>Descubre la historia y la misión de nuestro museo.</p>
-        <!-- Agrega aquí información sobre el museo -->
+        <div id="event-image">
+            <a href="acerca.html">
+                <img src="images/ev1.png" alt="Eventos">
+            </a>    
+            <div id="welcome-event">
+                <a href="acerca.html" class="mi-enlace">
+                    <h2>¡Acerca de nosotros!</h2>
+                </a>
+            </div>
+        </div>
+        <!-- ... (otros elementos del cuerpo) ... -->
     </section>
 
     <section id="contact">
         <h2>Contacto</h2>
-        <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
+            <p>¿Tienes alguna pregunta? <a href="contacto.html">¡Contáctanos!</a></p>
         <!-- Agrega aquí información de contacto y un formulario si es necesario -->
     </section>
 
     <footer>
         <p>&copy; 2023 Museo XYZ</p>
+        <div class="footer-links">
+            <a href="#">Política de privacidad</a>
+            <a href="#">Términos de uso</a>
+        </div>
     </footer>
 
 </body>
